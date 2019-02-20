@@ -21,6 +21,7 @@ public interface CustomerService {
 	    List<Customer> getAllModels();
 	    
 	    Customer updateModelById(Customer customer,Long id);
-
+	    
+	      public String getAddress(Long id);
 
 }
