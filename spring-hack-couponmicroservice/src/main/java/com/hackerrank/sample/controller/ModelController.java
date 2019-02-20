@@ -16,5 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value="/coupon")
 public class ModelController {
+    @Autowired
+    private ModelService modelService;
+
     
 }
