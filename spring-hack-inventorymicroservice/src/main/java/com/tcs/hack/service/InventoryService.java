@@ -19,6 +19,7 @@ public interface InventoryService  {
     List<Inventory> getAllModels();
     
     Inventory updateModelById(Inventory inventory,Long id);
+    public boolean isProductAvailable(Long skuId);
 
 
 }
