@@ -84,7 +84,7 @@ public class InventoryServiceImpl implements InventoryService {
 		
 		return null;
 	}
-/*	
+/	
 	@RabbitListener(queues="${com.tcs.hack.rabbitmq.queue}")
 	public void recieveEmail(OrderDTO order) 
 	{
