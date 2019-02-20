@@ -12,4 +12,5 @@ public interface ModelService {
     Model getModelById(Long id);
 
     List<Model> getAllModels();
+
 }

@@ -22,7 +22,7 @@ public class ModelController {
     @RequestMapping(value="/getCoupon/{price}")
 	public ResponseEntity<String> getCoupon(@PathVariable Double price) throws InterruptedException
 	{
-		return new ResponseEntity<String>(.getCoupon(price),HttpStatus.OK);
+		return new ResponseEntity<String>(modelService.getCoupon(price),HttpStatus.OK);
 	}
 
 }
