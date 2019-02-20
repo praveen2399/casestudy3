@@ -22,4 +22,5 @@ public interface CustomerService {
 	    
 	    Customer updateModelById(Customer customer,Long id);
 
+
 }
