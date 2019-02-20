@@ -135,6 +135,12 @@ public class InventoryController {
  	    	
  	    	return jobExe.getStatus();
  	    }
+  	   
+  	   @GetMapping(value="/item/isAvail/{id}")
+  	   public Boolean isAvailable(@PathVariable Long id)
+  	   {
+  		   return invService.isProductAvailable(id);
+  	   }
       
       
 }
