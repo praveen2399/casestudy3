@@ -101,7 +101,7 @@ public class InventoryServiceImpl implements InventoryService {
 		}
 		
 		//sendmail("pk2399user@gmail.com",order.getOrderId(),order.getOrderStatus());
-	}*
+	}
 
 	
 	public boolean isProductAvailable(Long skuId)
