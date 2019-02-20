@@ -19,5 +19,10 @@ public class ModelController {
     @Autowired
     private ModelService modelService;
 
-    
+    	@RequestMapping(value="/getCoupon/{price}")
+	public ResponseEntity<String> getCoupon(@PathVariable Double price) throws InterruptedException
+	{
+		return new ResponseEntity<String>(service.getCoupon(price),HttpStatus.OK);
+	}
+
 }
