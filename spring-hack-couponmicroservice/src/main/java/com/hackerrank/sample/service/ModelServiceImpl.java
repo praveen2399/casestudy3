@@ -11,5 +11,27 @@ import org.springframework.stereotype.Service;
 @Service("modelService")
 public class ModelServiceImpl implements ModelService {
    
-
+   public String getCoupon(Double price) throws InterruptedException
+	{
+		long starttime=System.currentTimeMillis();
+		if(price != null)
+		{
+			
+				Thread.sleep(5000);
+			
+			System.err.println("Time taken "+(System.currentTimeMillis()-starttime));
+			if(price <100)
+			{
+				return "5% off on next purchase";
+			}
+			else
+			{
+				return "15% off on next purchase";
+			}
+		}
+		else
+		{
+			return "No Coupon";
+		}
+	}
 }
