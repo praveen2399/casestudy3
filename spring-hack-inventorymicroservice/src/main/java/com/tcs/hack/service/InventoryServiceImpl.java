@@ -84,17 +84,17 @@ public class InventoryServiceImpl implements InventoryService {
 		
 		return null;
 	}
-/*	
+	
 	@RabbitListener(queues="${com.tcs.hack.rabbitmq.queue}")
-	public void recieveEmail(OrderDTO order) 
+	public void recieveEmail(OrderDTO order)
 	{
-		System.out.println("Recieved Message From RabbitMQ in Inventory: "+order.getCustomerID()); 
+		System.out.println("Recieved Message From RabbitMQ in Inventory: "+order.getCustomerID());
 		
 		Inventory tempInv=invRepo.findOne(order.getSkuId());
 		
 		if(null != tempInv)
 		{
-			tempInv.setInventoryOnHand(tempInv.getInventoryOnHand()-order.getItemQty());			
+			tempInv.setInventoryOnHand(tempInv.getInventoryOnHand()-order.getItemQty());
 			
 			invRepo.save(tempInv);
 			
